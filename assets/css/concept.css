@@ -1,0 +1,573 @@
+/*
+* Nos-Bunkers.fr - Styles pour la page concept
+*/
+
+/* ----- EN-TÊTE DE PAGE ----- */
+.page-hero {
+    background-color: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: 120px 0 60px;
+    position: relative;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/concept-hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.page-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.page-hero h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+    color: white;
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ----- SECTION INTRODUCTION ----- */
+.intro-section {
+    padding: var(--spacing-xl) 0;
+    background-color: white;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.intro-text h2 {
+    margin-bottom: var(--spacing-lg);
+    color: var(--secondary);
+}
+
+.intro-text p {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.tagline {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    border-left: 4px solid var(--primary);
+    background-color: rgba(230, 57, 70, 0.05);
+    font-size: 1.2rem;
+}
+
+.intro-image {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    height: 100%;
+}
+
+.intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ----- SECTION AVANTAGES ----- */
+.benefits-section {
+    background-color: var(--light);
+    padding: var(--spacing-xl) 0;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.benefit-card {
+    background-color: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.benefit-card h3 {
+    margin-bottom: var(--spacing-md);
+    color: var(--secondary);
+}
+
+.benefit-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--dark);
+}
+
+/* ----- SECTION COMMENT ÇA MARCHE ----- */
+.how-it-works {
+    padding: var(--spacing-xl) 0;
+    background-color: white;
+}
+
+.steps-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: var(--spacing-xl) auto 0;
+}
+
+.steps-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 4px;
+    background-color: var(--primary);
+    z-index: 0;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: var(--spacing-lg);
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.timeline-icon span {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-content {
+    background-color: var(--light);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.timeline-content h3 {
+    color: var(--secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.timeline-content p {
+    margin: 0;
+}
+
+/* ----- SECTION ÉQUIPEMENTS ----- */
+.equipment-section {
+    background-color: var(--light);
+    padding: var(--spacing-xl) 0;
+}
+
+.equipment-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.category {
+    background-color: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.category h3 {
+    color: var(--secondary);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--gray-light);
+}
+
+.category h3 i {
+    color: var(--primary);
+    margin-right: var(--spacing-sm);
+}
+
+.equipment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.equipment-list li {
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--gray-light);
+    display: flex;
+    align-items: center;
+}
+
+.equipment-list li::before {
+    content: "•";
+    color: var(--primary);
+    font-weight: bold;
+    margin-right: var(--spacing-sm);
+}
+
+.equipment-list li:last-child {
+    border-bottom: none;
+}
+
+/* ----- SECTION PLANS ----- */
+.plans-section {
+    padding: var(--spacing-xl) 0;
+    background-color: white;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.plan-card {
+    background-color: white;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    position: relative;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.plan-card.featured {
+    border: 2px solid var(--primary);
+    transform: scale(1.05);
+}
+
+.plan-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.ribbon {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    transform: rotate(45deg);
+    background-color: var(--primary);
+    color: white;
+    padding: 5px 40px;
+    font-weight: bold;
+    box-shadow: var(--shadow-sm);
+}
+
+.plan-header {
+    background-color: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: var(--spacing-lg);
+}
+
+.plan-header h3 {
+    color: white;
+    margin-bottom: var(--spacing-sm);
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.period {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.plan-features {
+    padding: var(--spacing-lg);
+}
+
+.plan-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan-features li {
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.plan-features li:last-child {
+    border-bottom: none;
+}
+
+.plan-features i {
+    margin-right: var(--spacing-sm);
+}
+
+.plan-features .fa-check {
+    color: var(--success);
+}
+
+.plan-features .fa-times {
+    color: var(--gray);
+}
+
+.plan-footer {
+    padding: var(--spacing-lg);
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.plans-note {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+/* ----- SECTION TÉMOIGNAGES ----- */
+.testimonials-section {
+    background-color: var(--light);
+    padding: var(--spacing-xl) 0;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.testimonial {
+    background-color: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal);
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-content {
+    position: relative;
+    padding-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.testimonial-content::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 4rem;
+    color: var(--primary);
+    opacity: 0.2;
+    font-family: serif;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--gray-light);
+    padding-top: var(--spacing-md);
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: var(--spacing-md);
+    object-fit: cover;
+}
+
+.testimonial-author h4 {
+    margin: 0 0 var(--spacing-xs) 0;
+}
+
+.testimonial-author p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+/* ----- SECTION CTA ----- */
+.cta-section {
+    background-color: var(--secondary);
+    color: white;
+    padding: var(--spacing-xl) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    color: white;
+    margin-bottom: var(--spacing-md);
+    font-size: 2.5rem;
+}
+
+.cta-content p {
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.cta-content .btn {
+    margin: 0 var(--spacing-sm);
+}
+
+/* ----- RESPONSIVE STYLES ----- */
+@media (max-width: 1024px) {
+    .intro-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .equipment-categories {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .plans-grid {
+        gap: var(--spacing-md);
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-image {
+        order: -1;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .equipment-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-card.featured {
+        transform: scale(1);
+    }
+
+    .plan-card.featured:hover {
+        transform: translateY(-10px);
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-content .btn {
+        display: block;
+        margin: var(--spacing-sm) 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-item {
+        padding-left: 60px;
+    }
+
+    .timeline-icon {
+        width: 60px;
+    }
+
+    .timeline-icon span {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .steps-timeline::before {
+        left: 30px;
+    }
+}

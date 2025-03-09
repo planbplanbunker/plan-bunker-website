@@ -1,0 +1,420 @@
+/*
+* Nos-Bunkers.fr - Styles pour les formulaires
+*/
+
+/* ----- EN-TÊTE DE PAGE ----- */
+.page-hero {
+    background-color: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: 120px 0 60px;
+    position: relative;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/contact-hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.page-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.page-hero h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+    color: white;
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ----- CONTACT SECTION ----- */
+.contact-section {
+    padding: var(--spacing-xl) 0;
+    background-color: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+}
+
+.contact-form-container, .contact-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-container h2, .contact-info-container h2 {
+    margin-bottom: var(--spacing-md);
+    color: var(--secondary);
+}
+
+.contact-form-container p {
+    margin-bottom: var(--spacing-lg);
+    color: var(--gray);
+}
+
+/* Contact Form Styles */
+#contact-form {
+    background-color: var(--light);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: var(--spacing-md);
+    border: 1px solid var(--gray-light);
+    border-radius: var(--border-radius-md);
+    font-family: var(--font-main);
+    font-size: 1rem;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(29, 53, 87, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-checkbox input {
+    width: auto;
+    margin-right: var(--spacing-sm);
+    margin-top: 5px;
+}
+
+.form-checkbox label {
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+/* Contact Info Styles */
+.contact-info {
+    background-color: var(--secondary);
+    color: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-info h2 {
+    color: white;
+    margin-bottom: var(--spacing-lg);
+}
+
+.info-block {
+    display: flex;
+    margin-bottom: var(--spacing-lg);
+}
+
+.info-icon {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-right: var(--spacing-md);
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-content h3 {
+    color: white;
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.1rem;
+}
+
+.info-content p {
+    margin: 0;
+}
+
+.info-note {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+.social-block {
+    margin-top: var(--spacing-lg);
+}
+
+.social-block h3 {
+    color: white;
+    margin-bottom: var(--spacing-md);
+    font-size: 1.1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all var(--transition-normal);
+}
+
+.social-icons a:hover {
+    background-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+/* Map Container Styles */
+.map-container {
+    background-color: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.map-container h3 {
+    margin-bottom: var(--spacing-md);
+    color: var(--secondary);
+}
+
+#contact-map {
+    height: 300px;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+}
+
+/* Quick FAQ Section */
+.quick-faq {
+    background-color: var(--light);
+    padding: var(--spacing-xl) 0;
+}
+
+.quick-faq h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--secondary);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.faq-item {
+    background-color: white;
+    margin-bottom: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: var(--spacing-md) var(--spacing-lg);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color var(--transition-fast);
+}
+
+.faq-question:hover {
+    background-color: #f9f9f9;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.toggle-icon {
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+
+.toggle-icon::before,
+.toggle-icon::after {
+    content: '';
+    position: absolute;
+    background-color: var(--primary);
+    transition: transform var(--transition-normal);
+}
+
+.toggle-icon::before {
+    top: 7px;
+    left: 0;
+    width: 16px;
+    height: 2px;
+}
+
+.toggle-icon::after {
+    top: 0;
+    left: 7px;
+    width: 2px;
+    height: 16px;
+}
+
+.faq-item.active .toggle-icon::after {
+    transform: rotate(90deg);
+}
+
+.faq-answer {
+    padding: 0 var(--spacing-lg);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal), padding var(--transition-normal);
+}
+
+.faq-item.active .faq-answer {
+    padding: 0 var(--spacing-lg) var(--spacing-lg);
+    max-height: 1000px;
+}
+
+.faq-more {
+    text-align: center;
+}
+
+.faq-more p {
+    margin-bottom: var(--spacing-md);
+    color: var(--gray);
+}
+
+/* Form Validation Styles */
+input.error, select.error, textarea.error {
+    border-color: var(--primary);
+    background-color: rgba(230, 57, 70, 0.05);
+}
+
+.error-message {
+    color: var(--primary);
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.success-message {
+    background-color: rgba(42, 157, 143, 0.1);
+    color: var(--success);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+}
+
+.success-message i {
+    margin-right: var(--spacing-sm);
+}
+
+/* Loading State */
+.form-loading {
+    position: relative;
+}
+
+.form-loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    border-radius: var(--border-radius-lg);
+}
+
+.form-loading::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--gray-light);
+    border-top: 3px solid var(--primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 3;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .contact-grid {
+        gap: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info-container {
+        order: -1;
+    }
+
+    .contact-info {
+        margin-bottom: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .info-block {
+        flex-direction: column;
+    }
+
+    .info-icon {
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+    }
+}
