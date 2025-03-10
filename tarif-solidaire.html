@@ -1,0 +1,307 @@
+<!-- NOUVELLE SECTION DE CONTRIBUTION SOLIDAIRE -->
+<section class="solidarity-section" id="contribute">
+    <div class="container">
+        <div class="section-header">
+            <h2>Notre engagement pour tous</h2>
+            <p>Ensemble, construisons un réseau d'abris accessibles à l'ensemble de la population française</p>
+        </div>
+        
+        <div class="solidarity-content">
+            <div class="solidarity-text">
+                <h3>Une approche solidaire et inclusive</h3>
+                <p>Notre initiative citoyenne a pour mission de protéger <strong>l'ensemble de la population</strong>, sans distinction de moyens. Nous croyons fermement que la sécurité est un droit fondamental pour tous.</p>
+                <p>Contrairement aux solutions commerciales traditionnelles, notre modèle repose sur un principe de solidarité : <strong>chacun contribue selon ses moyens</strong>, et tous bénéficient d'une protection égale.</p>
+                
+                <div class="contribution-options">
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h4>Contribution citoyenne</h4>
+                        <p>Participez à hauteur de vos moyens. Toute contribution, même modeste, nous rapproche de notre objectif collectif.</p>
+                        <a href="#join-community" class="btn btn-primary">Contribuer</a>
+                    </div>
+                    
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-hands"></i>
+                        </div>
+                        <h4>Bénévolat et compétences</h4>
+                        <p>Mettez vos talents au service du projet : construction, logistique, communication, médical...</p>
+                        <a href="#join-community" class="btn btn-primary">Rejoindre l'équipe</a>
+                    </div>
+                    
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h4>Partenariats et mécénat</h4>
+                        <p>Entreprises, collectivités, fondations : soutenez un projet d'utilité publique majeure.</p>
+                        <a href="pages/contact.html" class="btn btn-primary">Devenir partenaire</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="funding-progress">
+                <h3>Avancement de notre objectif national</h3>
+                <div class="progress-container">
+                    <div class="progress-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="1250">1250</span>
+                            <span class="stat-label">Contributeurs</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="8">8</span>
+                            <span class="stat-label">Projets en cours</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="4">4</span>
+                            <span class="stat-label">Millions € collectés</span>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-bar-container">
+                        <div class="progress-label">Objectif : 100 bunkers d'ici 2030</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 8%;"><span>8%</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="crowd-events">
+                        <h4>Événements de collecte à venir</h4>
+                        <ul>
+                            <li><i class="fas fa-ticket-alt"></i> Loterie solidaire nationale - Tirage le 30 avril</li>
+                            <li><i class="fas fa-running"></i> Course pour la résilience - 15 mai dans 20 villes</li>
+                            <li><i class="fas fa-music"></i> Concert caritatif - 5 juin à Paris</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline">Voir tous les événements</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STYLES CSS À AJOUTER -->
+<style>
+.solidarity-section {
+    background-color: var(--light);
+    padding: var(--spacing-xl) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.solidarity-section::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(230, 57, 70, 0.1);
+    border-radius: 50%;
+}
+
+.solidarity-section::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(29, 53, 87, 0.05);
+    border-radius: 50%;
+}
+
+.solidarity-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+    position: relative;
+    z-index: 2;
+}
+
+.solidarity-text h3 {
+    margin-bottom: var(--spacing-md);
+    color: var(--secondary);
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+}
+
+.solidarity-text h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary);
+}
+
+.solidarity-text p {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.contribution-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.option-card {
+    background-color: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+    text-align: center;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
+}
+
+.option-icon {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.option-card h4 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--secondary);
+}
+
+.option-card p {
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--gray);
+}
+
+.funding-progress {
+    background-color: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.funding-progress h3 {
+    margin-bottom: var(--spacing-lg);
+    color: var(--secondary);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.progress-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-lg);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: var(--secondary);
+}
+
+.progress-bar-container {
+    margin-bottom: var(--spacing-lg);
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+}
+
+.progress-bar {
+    height: 24px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    transition: width 1.5s ease;
+}
+
+.crowd-events {
+    border-top: 1px solid var(--gray-light);
+    padding-top: var(--spacing-md);
+}
+
+.crowd-events h4 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--secondary);
+}
+
+.crowd-events ul {
+    list-style: none;
+    margin-bottom: var(--spacing-md);
+}
+
+.crowd-events li {
+    padding: var(--spacing-xs) 0;
+    display: flex;
+    align-items: center;
+}
+
+.crowd-events li i {
+    color: var(--primary);
+    margin-right: var(--spacing-sm);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .contribution-options {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .solidarity-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .contribution-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .contribution-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .progress-stats {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        align-items: center;
+    }
+}
+</style>
