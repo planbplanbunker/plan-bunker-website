@@ -1,22 +1,35 @@
 /**
- * Nos-Bunkers.fr - Script pour la page FAQ
- * Ce fichier gère les fonctionnalités interactives de la page FAQ (accordéon, recherche, filtrage)
+ * Nos-Bunkers.fr - Script optimisé pour la FAQ
+ * Ce fichier gère toutes les interactions de la FAQ : accordéon, recherche, filtrage
  */
 
 document.addEventListener('DOMContentLoaded', function() {
     // Éléments DOM
     const faqItems = document.querySelectorAll('.faq-item');
     const searchInput = document.getElementById('faq-search');
-    const topicTags = document.querySelectorAll('.topic-tag');
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const faqCategories = document.querySelectorAll('.faq-category');
+    
+    // S'assurer que le premier élément de chaque catégorie est ouvert par défaut
+    faqCategories.forEach(category => {
+        const firstItem = category.querySelector('.faq-item');
+        if (firstItem) {
+            firstItem.classList.add('active');
+        }
+    });
 
-    // Initialiser les accordéons FAQ
+    // Initialiser l'accordéon FAQ
     initAccordion();
 
     // Initialiser la recherche
-    initSearch();
+    if (searchInput) {
+        initSearch();
+    }
 
     // Initialiser le filtrage par catégorie
-    initTopicFilters();
+    if (categoryButtons.length > 0) {
+        initCategoryFilter();
+    }
 
     /**
      * Initialisation de l'accordéon pour les éléments FAQ
@@ -24,16 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function initAccordion() {
         if (!faqItems.length) return;
 
-        // Fermer tous les éléments sauf le premier
-        faqItems.forEach((item, index) => {
-            if (index === 0) {
-                item.classList.add('active');
-            }
-        });
-
         // Ajouter des événements de clic à toutes les questions
         faqItems.forEach(item => {
             const question = item.querySelector('.faq-question');
+            if (!question) return;
 
             question.addEventListener('click', () => {
                 // Si l'élément est déjà actif, le fermer
@@ -65,16 +72,23 @@ document.addEventListener('DOMContentLoaded', function() {
      * Initialisation de la fonctionnalité de recherche
      */
     function initSearch() {
-        if (!searchInput) return;
-
-        // Créer un élément pour "aucun résultat"
-        const noResultsEl = document.createElement('div');
-        noResultsEl.className = 'no-results';
-        noResultsEl.innerHTML = '<p>Aucun résultat trouvé pour votre recherche. Veuillez essayer d\'autres termes ou <a href="contact.html">contactez-nous</a> pour une assistance personnalisée.</p>';
-
-        const faqContainer = document.querySelector('.faq-container');
-        if (faqContainer) {
-            faqContainer.appendChild(noResultsEl);
+        // Créer un élément pour "aucun résultat" s'il n'existe pas déjà
+        let noResultsEl = document.querySelector('.faq-no-results');
+        if (!noResultsEl) {
+            noResultsEl = document.createElement('div');
+            noResultsEl.className = 'faq-no-results';
+            noResultsEl.innerHTML = `
+                <div class="no-results-content">
+                    <i class="fas fa-search"></i>
+                    <h3>Aucun résultat trouvé</h3>
+                    <p>Essayez d'autres termes de recherche ou explorez les catégories.</p>
+                    <p>Si vous ne trouvez pas la réponse à votre question, n'hésitez pas à <a href="contact.html">nous contacter directement</a>.</p>
+                </div>
+            `;
+            const faqMainSection = document.querySelector('.faq-main-section .container');
+            if (faqMainSection) {
+                faqMainSection.prepend(noResultsEl);
+            }
         }
 
         // Événement de saisie pour la recherche en temps réel
@@ -91,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let resultCount = 0;
 
             // Pour chaque catégorie
-            document.querySelectorAll('.faq-category').forEach(category => {
+            faqCategories.forEach(category => {
                 let categoryHasResults = false;
 
                 // Pour chaque élément FAQ dans cette catégorie
@@ -123,31 +137,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Afficher le message "aucun résultat" si nécessaire
             if (resultCount === 0) {
-                noResultsEl.classList.add('visible');
+                noResultsEl.style.display = 'block';
             } else {
-                noResultsEl.classList.remove('visible');
+                noResultsEl.style.display = 'none';
             }
 
         }, 300));
-
-        // Bouton de recherche
-        const searchBtn = document.querySelector('.search-btn');
-        if (searchBtn) {
-            searchBtn.addEventListener('click', function() {
-                // Déclencher l'événement input pour lancer la recherche
-                const event = new Event('input');
-                searchInput.dispatchEvent(event);
-            });
-        }
-
-        // Touche Entrée pour rechercher
-        searchInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                e.preventDefault();
-                const event = new Event('input');
-                searchInput.dispatchEvent(event);
-            }
-        });
 
         // Fonction pour mettre en évidence le texte recherché
         function highlightText(item, searchText) {
@@ -203,17 +198,17 @@ document.addEventListener('DOMContentLoaded', function() {
             const question = item.querySelector('.faq-question h3');
             const answer = item.querySelector('.faq-answer');
 
-            traverseNodes(question);
-            traverseNodes(answer);
+            if (question) traverseNodes(question);
+            if (answer) traverseNodes(answer);
         }
 
         // Réinitialiser la recherche
         function resetSearch() {
             // Restaurer tous les éléments
-            document.querySelectorAll('.faq-category').forEach(category => {
+            faqCategories.forEach(category => {
                 category.style.display = 'block';
 
-                category.querySelectorAll('.faq-item').forEach(item => {
+                category.querySelectorAll('.faq-item').forEach((item, index) => {
                     item.style.display = 'block';
 
                     // Supprimer les mises en évidence
@@ -225,47 +220,106 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
 
                     // Fermer tous les éléments sauf le premier de chaque catégorie
-                    if (item !== category.querySelector('.faq-item')) {
+                    if (index !== 0) {
                         item.classList.remove('active');
+                    } else {
+                        item.classList.add('active');
                     }
                 });
             });
 
             // Masquer le message "aucun résultat"
-            document.querySelector('.no-results').classList.remove('visible');
+            const noResults = document.querySelector('.faq-no-results');
+            if (noResults) {
+                noResults.style.display = 'none';
+            }
         }
+
+        // Ajouter un événement au bouton de recherche
+        const searchBtn = document.querySelector('.search-btn');
+        if (searchBtn) {
+            searchBtn.addEventListener('click', function() {
+                // Déclencher l'événement input pour lancer la recherche
+                const event = new Event('input');
+                searchInput.dispatchEvent(event);
+            });
+        }
+
+        // Touche Entrée pour rechercher
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                const event = new Event('input');
+                searchInput.dispatchEvent(event);
+            }
+        });
     }
 
     /**
      * Initialisation du filtrage par catégorie
      */
-    function initTopicFilters() {
-        if (!topicTags.length) return;
+    function initCategoryFilter() {
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Retirer la classe active de tous les boutons
+                categoryButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                });
 
-        topicTags.forEach(tag => {
+                // Ajouter la classe active au bouton cliqué
+                this.classList.add('active');
+
+                // Obtenir la catégorie à filtrer
+                const filter = this.getAttribute('data-category');
+
+                // Si "all", afficher toutes les catégories
+                if (filter === 'all') {
+                    faqCategories.forEach(category => {
+                        category.style.display = 'block';
+                    });
+                } else {
+                    // Sinon, filtrer par catégorie
+                    faqCategories.forEach(category => {
+                        const categoryId = category.getAttribute('id');
+                        if (categoryId === filter) {
+                            category.style.display = 'block';
+                            // Faire défiler jusqu'à la catégorie
+                            scrollToElement(category);
+                        } else {
+                            category.style.display = 'none';
+                        }
+                    });
+                }
+
+                // Réinitialiser la recherche
+                if (searchInput) {
+                    searchInput.value = '';
+                    const event = new Event('input');
+                    searchInput.dispatchEvent(event);
+                }
+            });
+        });
+
+        // Ajouter des liens aux tags de sujet dans le contenu
+        document.querySelectorAll('.topic-tag').forEach(tag => {
             tag.addEventListener('click', function(e) {
                 e.preventDefault();
 
-                // Récupérer l'ID de la catégorie cible
+                // Obtenir l'ID de la catégorie cible
                 const targetId = this.getAttribute('href').substring(1);
                 const targetCategory = document.getElementById(targetId);
 
-                if (targetCategory) {
-                    // Réinitialiser la recherche
-                    if (searchInput) {
-                        searchInput.value = '';
-                        const event = new Event('input');
-                        searchInput.dispatchEvent(event);
+                // Trouver le bouton de catégorie correspondant
+                categoryButtons.forEach(btn => {
+                    if (btn.getAttribute('data-category') === targetId) {
+                        // Simuler un clic sur ce bouton
+                        btn.click();
                     }
+                });
 
+                if (targetCategory) {
                     // Faire défiler jusqu'à la catégorie
-                    targetCategory.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-                    // Ajouter une légère animation pour attirer l'attention
-                    targetCategory.classList.add('fade-in');
-                    setTimeout(() => {
-                        targetCategory.classList.remove('fade-in');
-                    }, 1000);
+                    scrollToElement(targetCategory);
                 }
             });
         });
@@ -275,7 +329,7 @@ document.addEventListener('DOMContentLoaded', function() {
      * Fonction utilitaire pour faire défiler l'écran vers un élément
      */
     function scrollToElement(element) {
-        const headerHeight = document.querySelector('.main-header').offsetHeight;
+        const headerHeight = document.querySelector('.main-header')?.offsetHeight || 0;
         const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
         const offsetPosition = elementPosition - headerHeight - 20;
 
