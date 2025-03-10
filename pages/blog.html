@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Nos-Bunkers.fr</title>
+    <meta name="description" content="Découvrez nos articles sur la préparation aux crises, la sécurité, et les actualités concernant notre projet de bunkers communautaires.">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!-- Bannière d'alerte -->
+<div class="alert-banner">
+    <p>🚨 Face aux tensions mondiales croissantes, il est temps d'agir. Rejoignez-nous dès maintenant !</p>
+    <button class="close-btn"><i class="fas fa-times"></i></button>
+</div>
+
+<!-- En-tête -->
+<header class="main-header">
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/images/logo.png" alt="Nos-Bunkers.fr Logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-list">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="concept.html">Notre Concept</a></li>
+                <li><a href="communaute.html">Communauté</a></li>
+                <li><a href="abonnement.html">Abonnements</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cta-header">
+            <a href="../index.html#join-now" class="btn btn-primary">Rejoindre le projet</a>
+        </div>
+    </div>
+</header>
+
+<!-- En-tête de page -->
+<section class="page-hero">
+    <div class="container">
+        <h1>Notre Blog</h1>
+        <p>Actualités, conseils et réflexions sur la sécurité et la résilience collective</p>
+    </div>
+</section>
+
+<!-- Section Filtres et Recherche -->
+<section class="blog-filter-section">
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="blog-search" placeholder="Rechercher un article..." aria-label="Rechercher un article">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="blog-categories">
+            <h3>Catégories :</h3>
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">Tous</button>
+                <button class="category-btn" data-category="securite">Sécurité</button>
+                <button class="category-btn" data-category="actualites">Actualités</button>
+                <button class="category-btn" data-category="communaute">Communauté</button>
+                <button class="category-btn" data-category="technique">Technique</button>
+                <button class="category-btn" data-category="preparation">Préparation</button>
+                <button class="category-btn" data-category="temoignages">Témoignages</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section du Blog Principal -->
+<section class="blog-main-section">
+    <div class="container">
+        <div class="blog-grid">
+            <!-- Contenu principal du blog -->
+            <div class="blog-content">
+                <div class="featured-post">
+                    <div class="post-image">
+                        <img src="../assets/images/blog/featured-post.jpg" alt="Bunker moderne avec des habitants">
+                        <span class="post-tag">Reportage</span>
+                    </div>
+                    <div class="post-content">
+                        <h2><a href="#">La vie souterraine : immersion dans notre bunker modèle de Paris</a></h2>
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar-alt"></i> 5 mars 2025</span>
+                            <span class="post-author"><i class="far fa-user"></i> Thomas Lambert</span>
+                            <span class="post-comments"><i class="far fa-comment"></i> 24 commentaires</span>
+                        </div>
+                        <p class="post-excerpt">
+                            Notre journaliste a passé une semaine dans le bunker modèle de la région parisienne, avec les membres fondateurs de la communauté. Découvrez son expérience complète, de l'arrivée aux exercices quotidiens, en passant par les moments de convivialité et les défis rencontrés.
+                        </p>
+                        <a href="#" class="btn btn-secondary">Lire l'article complet</a>
+                    </div>
+                </div>
+
+                <div class="posts-grid">
+                    <article class="post-card">
+                        <div class="post-image">
+                            <img src="../assets/images/blog/post-1.jpg" alt="Exercice d'évacuation">
+                            <span class="post-tag">Préparation</span>
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="#">5 exercices pratiques à faire en famille pour se préparer à une évacuation</a></h3>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> 28 février 2025</span>
+                                <span class="post-author"><i class="far fa-user"></i> Sophie Martin</span>
+                            </div>
+                            <p class="post-excerpt">
+                                Être prêt à évacuer rapidement est essentiel en cas d'urgence. Découvrez 5 exercices simples à réaliser avec toute la famille pour développer les bons réflexes et réduire le stress en situation réelle.
+                            </p>
+                            <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-image">
+                            <img src="../assets/images/blog/post-2.jpg" alt="Système de filtration d'eau">
+                            <span class="post-tag">Technique</span>
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="#">Les systèmes de filtration d'eau : comprendre les options pour votre sécurité</a></h3>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> 20 février 2025</span>
+                                <span class="post-author"><i class="far fa-user"></i> Marc Dubois</span>
+                            </div>
+                            <p class="post-excerpt">
+                                L'eau potable est critique en situation de crise. Cet article compare les différentes technologies de filtration utilisées dans nos bunkers et propose des solutions à l'échelle individuelle.
+                            </p>
+                            <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-image">
+                            <img src="../assets/images/blog/post-3.jpg" alt="Réunion communautaire">
+                            <span class="post-tag">Communauté</span>
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="#">Comment notre communauté de Lyon a financé son bunker en temps record</a></h3>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> 15 février 2025</span>
+                                <span class="post-author"><i class="far fa-user"></i> Lucie Bernard</span>
+                            </div>
+                            <p class="post-excerpt">
+                                La communauté lyonnaise a réussi à atteindre son objectif de financement en seulement 4 mois, contre 6 à 8 habituellement. Découvrez les stratégies innovantes qu'ils ont employées.
+                            </p>
+                            <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-image">
+                            <img src="../assets/images/blog/post-4.jpg" alt="Aliments stockés">
+                            <span class="post-tag">Préparation</span>
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="#">Conservation des aliments : les erreurs à éviter pour vos réserves personnelles</a></h3>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> 8 février 2025</span>
+                                <span class="post-author"><i class="far fa-user"></i> Chloé Petit</span>
+                            </div>
+                            <p class="post-excerpt">
+                                Stocker des aliments pour les situations d'urgence est une bonne pratique, mais encore faut-il le faire correctement. Voici les pièges les plus courants et comment les éviter.
+                            </p>
+                            <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-image">
+                            <img src="../assets/images/blog/post-5.jpg" alt="Réunion des responsables">
+                            <span class="post-tag">Actualités</span>
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="#">Nouvelle réglementation sur les abris collectifs : ce qui change pour nos bunkers</a></h3>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> 3 février 2025</span>
+                                <span class="post-author"><i class="far fa-user"></i> Alexandre Moreau</span>
+                            </div>
+                            <p class="post-excerpt">
+                                Le ministère de l'Intérieur a publié de nouvelles normes concernant les abris collectifs. Nos experts analysent ces changements et leur impact sur notre projet.
+                            </p>
+                            <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-image">
+                            <img src="../assets/images/blog/post-6.jpg" alt="Famille membre">
+                            <span class="post-tag">Témoignages</span>
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="#">"Mes enfants dorment mieux depuis que nous avons rejoint le projet" - Témoignage de Marie</a></h3>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> 28 janvier 2025</span>
+                                <span class="post-author"><i class="far fa-user"></i> Équipe de rédaction</span>
+                            </div>
+                            <p class="post-excerpt">
+                                Marie, mère de deux enfants et membre depuis 6 mois, nous raconte comment le fait d'avoir un plan B concret a réduit l'anxiété de toute sa famille face à l'actualité.
+                            </p>
+                            <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="pagination">
+                    <span class="current-page">1</span>
+                    <a href="#" class="page">2</a>
+                    <a href="#" class="page">3</a>
+                    <a href="#" class="page">4</a>
+                    <span class="dots">...</span>
+                    <a href="#" class="page">12</a>
+                    <a href="#" class="next-page">Page suivante <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Sidebar du blog -->
+            <div class="blog-sidebar">
+                <div class="sidebar-widget about-widget">
+                    <h3>À propos du blog</h3>
+                    <p>Bienvenue sur le blog de Nos-Bunkers.fr, votre source d'informations sur la préparation aux crises, la résilience et notre projet de bunkers communautaires. Nos articles sont rédigés par des experts et des membres de notre communauté.</p>
+                </div>
+
+                <div class="sidebar-widget categories-widget">
+                    <h3>Catégories</h3>
+                    <ul class="category-list">
+                        <li><a href="#">Sécurité <span>(12)</span></a></li>
+                        <li><a href="#">Actualités <span>(8)</span></a></li>
+                        <li><a href="#">Communauté <span>(15)</span></a></li>
+                        <li><a href="#">Technique <span>(7)</span></a></li>
+                        <li><a href="#">Préparation <span>(10)</span></a></li>
+                        <li><a href="#">Témoignages <span>(14)</span></a></li>
+                        <li><a href="#">Événements <span>(6)</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget popular-posts-widget">
+                    <h3>Articles populaires</h3>
+                    <div class="popular-posts">
+                        <div class="popular-post">
+                            <div class="post-image">
+                                <img src="../assets/images/blog/popular-1.jpg" alt="Kit de survie">
+                            </div>
+                            <div class="post-info">
+                                <h4><a href="#">Le kit de survie essentiel : 10 objets à avoir chez soi</a></h4>
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> 10 janvier 2025</span>
+                            </div>
+                        </div>
+
+                        <div class="popular-post">
+                            <div class="post-image">
+                                <img src="../assets/images/blog/popular-2.jpg" alt="Famille dans un bunker">
+                            </div>
+                            <div class="post-info">
+                                <h4><a href="#">Comment parler de préparation aux enfants sans les effrayer</a></h4>
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> 5 janvier 2025</span>
+                            </div>
+                        </div>
+
+                        <div class="popular-post">
+                            <div class="post-image">
+                                <img src="../assets/images/blog/popular-3.jpg" alt="Construction bunker">
+                            </div>
+                            <div class="post-info">
+                                <h4><a href="#">Coulisses : comment nous construisons un bunker en 6 mois</a></h4>
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> 20 décembre 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget newsletter-widget">
+                    <h3>Newsletter du blog</h3>
+                    <p>Recevez nos derniers articles et conseils directement dans votre boîte mail.</p>
+                    <form class="sidebar-newsletter-form">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit" class="btn btn-primary btn-full">S'abonner</button>
+                    </form>
+                </div>
+
+                <div class="sidebar-widget tags-widget">
+                    <h3>Tags populaires</h3>
+                    <div class="tag-cloud">
+                        <a href="#" class="tag">Sécurité</a>
+                        <a href="#" class="tag">Préparation</a>
+                        <a href="#" class="tag">Famille</a>
+                        <a href="#" class="tag">Crise</a>
+                        <a href="#" class="tag">Autonomie</a>
+                        <a href="#" class="tag">Communauté</a>
+                        <a href="#" class="tag">Construction</a>
+                        <a href="#" class="tag">Eau</a>
+                        <a href="#" class="tag">Énergie</a>
+                        <a href="#" class="tag">Formation</a>
+                        <a href="#" class="tag">Alimentation</a>
+                        <a href="#" class="tag">Survie</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget cta-widget">
+                    <div class="cta-content">
+                        <h3>Rejoignez notre communauté</h3>
+                        <p>Sécurisez l'avenir de votre famille en rejoignant notre réseau de bunkers collaboratifs.</p>
+                        <a href="../index.html#join-now" class="btn btn-primary btn-full">Réserver ma place</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Newsletter -->
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-content">
+            <h2>Restez informé de l'évolution du projet</h2>
+            <p>Recevez nos actualités et soyez alerté des opportunités près de chez vous</p>
+            <form class="newsletter-form" action="#" method="POST">
+                <input type="email" placeholder="Votre adresse email" required>
+                <button type="submit" class="btn btn-primary">S'abonner</button>
+            </form>
+            <p class="privacy-note">En vous inscrivant, vous acceptez notre politique de confidentialité. Vous pourrez vous désinscrire à tout moment.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Pied de page -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Nos-Bunkers.fr</h3>
+                <p>Anticiper l'imprévisible et sécuriser son futur. Pour protéger ce qui compte vraiment.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Liens rapides</h3>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="concept.html">Notre concept</a></li>
+                    <li><a href="communaute.html">Communauté</a></li>
+                    <li><a href="abonnement.html">Abonnements</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Informations</h3>
+                <ul class="footer-links">
+                    <li><a href="#">À propos de nous</a></li>
+                    <li><a href="#">Fonctionnement des bunkers</a></li>
+                    <li><a href="#">Sécurité et standards</a></li>
+                    <li><a href="#">Témoignages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Presse</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> Siège : 1 rue de la Sécurité, 75001 Paris</p>
+                    <p><i class="fas fa-phone"></i> Tél : +33 (0)1 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> Email : contact@nos-bunkers.fr</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nos-Bunkers.fr. Tous droits réservés.</p>
+            <ul class="legal-links">
+                <li><a href="#">Conditions d'utilisation</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Mentions légales</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/blog.js"></script>
+</body>
+</html>
