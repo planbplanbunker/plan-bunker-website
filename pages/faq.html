@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Nos-Bunkers.fr</title>
+    <meta name="description" content="Retrouvez les réponses à toutes vos questions concernant nos bunkers collaboratifs, notre modèle économique et notre communauté.">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!-- Bannière d'alerte -->
+<div class="alert-banner">
+    <p>🚨 Face aux tensions mondiales croissantes, il est temps d'agir. Rejoignez-nous dès maintenant !</p>
+    <button class="close-btn"><i class="fas fa-times"></i></button>
+</div>
+
+<!-- En-tête -->
+<header class="main-header">
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/images/logo.png" alt="Nos-Bunkers.fr Logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-list">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="concept.html">Notre Concept</a></li>
+                <li><a href="communaute.html">Communauté</a></li>
+                <li><a href="abonnement.html">Abonnements</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cta-header">
+            <a href="../index.html#join-now" class="btn btn-primary">Rejoindre le projet</a>
+        </div>
+    </div>
+</header>
+
+<!-- En-tête de page -->
+<section class="page-hero">
+    <div class="container">
+        <h1>Questions fréquemment posées</h1>
+        <p>Retrouvez les réponses aux questions les plus courantes sur notre projet</p>
+    </div>
+</section>
+
+<!-- Section Recherche et Filtres -->
+<section class="faq-search-section">
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="faq-search" placeholder="Rechercher une question..." aria-label="Rechercher une question">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="faq-categories">
+            <h3>Catégories :</h3>
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">Toutes</button>
+                <button class="category-btn" data-category="projet">Le Projet</button>
+                <button class="category-btn" data-category="bunkers">Les Bunkers</button>
+                <button class="category-btn" data-category="abonnements">Abonnements</button>
+                <button class="category-btn" data-category="securite">Sécurité</button>
+                <button class="category-btn" data-category="communaute">Communauté</button>
+                <button class="category-btn" data-category="juridique">Juridique</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section FAQ Principale -->
+<section class="faq-main-section">
+    <div class="container">
+        <div id="faq-no-results" class="faq-no-results" style="display: none;">
+            <div class="no-results-content">
+                <i class="fas fa-search"></i>
+                <h3>Aucun résultat trouvé</h3>
+                <p>Essayez d'autres termes de recherche ou explorez les catégories ci-dessus.</p>
+                <p>Si vous ne trouvez pas la réponse à votre question, n'hésitez pas à nous <a href="contact.html">contacter directement</a>.</p>
+            </div>
+        </div>
+
+        <!-- Le Projet -->
+        <div class="faq-category" id="projet">
+            <h2>Le Projet</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Pourquoi avons-nous besoin de bunkers en France ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Avec la situation mondiale tendue et les menaces croissantes, la France dispose de seulement 1 000 bunkers pouvant accueillir moins de 1% de la population. Contrairement à d'autres pays européens qui prennent des mesures préventives (comme la Suisse qui dispose d'abris pour l'ensemble de sa population), notre stratégie repose uniquement sur la dissuasion nucléaire.</p>
+                    <p>Face à de multiples menaces potentielles (conflits internationaux, catastrophes naturelles, risques industriels ou sanitaires), nous estimons qu'il est essentiel que les citoyens puissent disposer d'abris sécurisés à un coût accessible. Notre projet vise à combler ce manque en proposant une solution collective et économiquement viable.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Quelle est la vision à long terme de Nos-Bunkers.fr ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Notre vision est de créer un réseau national d'abris sécurisés, accessibles à tous les citoyens souhaitant se prémunir contre les risques majeurs. Nous visons la construction d'au moins un bunker dans chaque département français d'ici 2030, pour un total de plus de 100 bunkers pouvant accueillir jusqu'à 50 000 personnes.</p>
+                    <p>Au-delà de l'infrastructure physique, nous souhaitons développer un véritable écosystème de résilience, avec des formations, des ressources éducatives et un réseau d'entraide entre communautés. À terme, nos bunkers pourront également servir de centres de formation à la survie et à l'autonomie au quotidien.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Qui se trouve derrière ce projet ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nos-Bunkers.fr a été fondé par une équipe pluridisciplinaire composée d'ingénieurs en génie civil, d'experts en sécurité, d'économistes et de spécialistes en gestion de crise. Notre équipe fondatrice rassemble des professionnels ayant travaillé dans le secteur de la défense, de la construction, et de la gestion de communautés.</p>
+                    <p>Nous avons également constitué un comité consultatif composé d'experts indépendants (médecins, psychologues, juristes, architectes) qui nous accompagnent dans le développement du projet et s'assurent du respect des normes les plus strictes en matière de sécurité et de confort.</p>
+                    <p>Notre société est enregistrée en France et soumise à toutes les réglementations en vigueur. Nous publions régulièrement des rapports d'activité et de transparence accessibles à tous nos membres.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Ce projet est-il approuvé par les autorités françaises ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Notre projet s'inscrit dans un cadre légal parfaitement défini et respecte toutes les réglementations en vigueur. Chaque bunker est construit avec les autorisations nécessaires (permis de construire, études d'impact environnemental, etc.) et respecte les normes de sécurité les plus strictes.</p>
+                    <p>Bien que nos bunkers ne fassent pas partie du dispositif officiel de protection civile, nous collaborons régulièrement avec les autorités locales et les services d'urgence pour assurer une coordination optimale en cas de crise. Dans certaines régions, des partenariats ont même été établis avec les municipalités qui voient un intérêt à disposer d'une infrastructure de sécurité supplémentaire.</p>
+                    <p>Conformément à la législation, nos installations peuvent être réquisitionnées par l'État en cas de crise majeure, même si notre priorité reste la protection de nos membres.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Les Bunkers -->
+        <div class="faq-category" id="bunkers">
+            <h2>Les Bunkers</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment sont construits vos bunkers ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nos bunkers sont conçus selon les standards les plus élevés en matière de protection. La structure est réalisée en béton armé haute densité (épaisseur minimale de 1 mètre), renforcé par une armature en acier. Les entrées sont sécurisées par des portes blindées anti-souffle et anti-radiation.</p>
+                    <p>Chaque bunker est équipé de :</p>
+                    <ul>
+                        <li>Systèmes de filtration d'air HEPA avec détection NBC (Nucléaire, Biologique, Chimique)</li>
+                        <li>Systèmes de filtration et recyclage d'eau</li>
+                        <li>Générateurs électriques autonomes et panneaux solaires</li>
+                        <li>Réserves alimentaires pour une autonomie minimale d'un an</li>
+                        <li>Espaces de vie modulaires (zones privées et communes)</li>
+                        <li>Installations médicales</li>
+                        <li>Systèmes de communication d'urgence</li>
+                    </ul>
+                    <p>Nos bunkers sont conçus pour résister à des explosions, des tremblements de terre, des tempêtes extrêmes, et offrir une protection contre les radiations. Ils sont également équipés de systèmes de surveillance et de contrôle d'accès sophistiqués.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Où sont situés les bunkers ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nos bunkers sont stratégiquement situés en périphérie des zones urbaines, généralement dans un rayon de 10 km maximum des centres-villes. Cette proximité permet un accès rapide en cas d'urgence, tout en maintenant une distance de sécurité par rapport aux cibles potentielles.</p>
+                    <p>Les emplacements exacts ne sont communiqués qu'aux membres afin de préserver la sécurité des installations. Toutefois, lors de votre inscription, nous garantissons qu'un bunker sera accessible à moins de 10 km de votre domicile. Si ce n'est pas le cas, nous vous proposons soit un remboursement, soit une priorité d'accès lorsqu'un projet sera lancé dans votre région.</p>
+                    <p>Nos sites sont soigneusement sélectionnés en fonction de critères géologiques (stabilité du sol, absence de nappes phréatiques superficielles), d'accessibilité, et de distance par rapport aux zones à risque (centrales nucléaires, installations industrielles Seveso, zones inondables).</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Combien de temps peut-on vivre dans ces bunkers ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nos bunkers sont conçus pour permettre une vie en autarcie complète pendant au minimum un an. Cette autonomie est assurée par :</p>
+                    <ul>
+                        <li>Des réserves alimentaires à longue conservation (rotation régulière pour maintenir la fraîcheur)</li>
+                        <li>Des systèmes de recyclage d'eau permettant de réutiliser jusqu'à 95% de l'eau consommée</li>
+                        <li>Des systèmes de production d'énergie autonomes avec stockage</li>
+                        <li>Des cultures hydroponiques pour compléter l'alimentation</li>
+                        <li>Des systèmes de gestion des déchets</li>
+                    </ul>
+                    <p>Au-delà d'un an, la survie dépendrait de la nature de la crise et de la possibilité de se réapprovisionner à l'extérieur. C'est pourquoi nos bunkers comprennent également des équipements de reconnaissance extérieure et de protection pour les sorties ponctuelles.</p>
+                    <p>Des exercices réguliers sont organisés pour simuler la vie en autarcie et optimiser la gestion des ressources. Chaque membre reçoit une formation aux techniques de survie et de gestion de crise.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Peut-on visiter un bunker avant de s'engager ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolument ! Nous avons construit un bunker modèle visitable près de Paris, qui présente toutes les caractéristiques de nos installations réelles. Des visites guidées y sont organisées régulièrement pour les personnes intéressées par notre projet.</p>
+                    <p>Pour participer à une visite, il vous suffit de remplir le formulaire de contact en sélectionnant "Demande de visite" comme sujet. Nous vous proposerons alors plusieurs créneaux disponibles. Ces visites sont gratuites et sans engagement.</p>
+                    <p>Durant la visite, vous pourrez explorer tous les espaces (zones communes, quartiers privés, installations techniques) et poser toutes vos questions à nos experts. Vous rencontrerez également des membres actuels qui pourront partager leur expérience.</p>
+                    <p>Pour les personnes éloignées de Paris, nous proposons également des visites virtuelles en 3D, bien que l'expérience physique soit évidemment plus complète.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Les animaux de compagnie sont-ils acceptés dans les bunkers ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Oui, nous comprenons que les animaux de compagnie font partie de la famille et nous avons prévu des dispositions spéciales pour eux :</p>
+                    <ul>
+                        <li>Chaque bunker dispose d'une zone dédiée aux animaux avec systèmes de ventilation adaptés</li>
+                        <li>Des réserves de nourriture spécifique sont prévues</li>
+                        <li>Un espace extérieur sécurisé permet leur exercice régulier</li>
+                        <li>Un vétérinaire fait partie de l'équipe de gestion de crise</li>
+                    </ul>
+                    <p>L'accueil des animaux est soumis à quelques règles simples pour garantir la sécurité et le confort de tous :</p>
+                    <ul>
+                        <li>Vaccination à jour obligatoire</li>
+                        <li>Comportement social (les animaux agressifs doivent être muselés dans les espaces communs)</li>
+                        <li>Limitation à deux animaux par famille (des exceptions peuvent être accordées pour les petits animaux)</li>
+                    </ul>
+                    <p>Un supplément de 50€/mois par animal est demandé pour couvrir les frais spécifiques (nourriture, soins vétérinaires, nettoyage).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Abonnements -->
+        <div class="faq-category" id="abonnements">
+            <h2>Abonnements et Tarifs</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment fonctionne le modèle économique ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Notre modèle repose sur la mutualisation des coûts. En construisant des abris pouvant accueillir de 50 à 500 personnes, nous répartissons l'investissement entre tous les membres via un abonnement mensuel. Cette approche rend le projet abordable pour tous, contrairement à la construction d'un bunker privé qui coûterait plus d'un million d'euros par famille.</p>
+                    <p>La structure des coûts se décompose ainsi :</p>
+                    <ul>
+                        <li>70% - Construction et équipement initial du bunker</li>
+                        <li>15% - Maintenance continue et renouvellement des équipements</li>
+                        <li>10% - Gestion des stocks (nourriture, médicaments, etc.)</li>
+                        <li>5% - Administration et développement du réseau</li>
+                    </ul>
+                    <p>Les fonds sont gérés avec une transparence totale. Chaque membre reçoit un rapport financier trimestriel détaillant l'utilisation des abonnements et l'état des projets en cours.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Quelles sont les différentes formules d'abonnement ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nous proposons trois formules principales, adaptées à différents besoins :</p>
+
+                    <div class="faq-table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Caractéristiques</th>
+                                <th>Accès Standard<br>350€/mois</th>
+                                <th>Accès Famille<br>950€/mois</th>
+                                <th>Accès Premium<br>1500€/mois</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Places garanties</td>
+                                <td>1 place</td>
+                                <td>4 places</td>
+                                <td>6 places</td>
+                            </tr>
+                            <tr>
+                                <td>Espace privé</td>
+                                <td>Non</td>
+                                <td>Espace familial</td>
+                                <td>Suite privée avec salle de bain</td>
+                            </tr>
+                            <tr>
+                                <td>Stockage personnel</td>
+                                <td>10kg</td>
+                                <td>100kg</td>
+                                <td>200kg</td>
+                            </tr>
+                            <tr>
+                                <td>Formations</td>
+                                <td>Annuelle</td>
+                                <td>Trimestrielle</td>
+                                <td>Illimitée</td>
+                            </tr>
+                            <tr>
+                                <td>Accès hors crise</td>
+                                <td>Non</td>
+                                <td>2 weekends/an</td>
+                                <td>Permanent</td>
+                            </tr>
+                            <tr>
+                                <td>Priorité d'accès</td>
+                                <td>Standard</td>
+                                <td>Prioritaire</td>
+                                <td>Absolue</td>
+                            </tr>
+                            <tr>
+                                <td>Poids dans les décisions</td>
+                                <td>1 voix</td>
+                                <td>2 voix</td>
+                                <td>3 voix + siège au conseil</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>Des options complémentaires sont disponibles :</p>
+                    <ul>
+                        <li>Place supplémentaire : +150€/mois</li>
+                        <li>Stockage additionnel : +5€/mois par kg</li>
+                        <li>Pack équipement individuel : +75€/mois par personne</li>
+                        <li>Formations spécialisées : à partir de 200€</li>
+                    </ul>
+                    <p>Tous nos abonnements sont sans engagement, avec un préavis de résiliation de 3 mois (Standard et Famille) ou 6 mois (Premium). Nous proposons également des paiements annuels avec 10% de réduction.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Que se passe-t-il si je ne peux plus payer mon abonnement ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nous comprenons que des difficultés financières peuvent survenir. C'est pourquoi nous avons mis en place plusieurs solutions :</p>
+                    <ol>
+                        <li><strong>Suspension temporaire :</strong> Possibilité de suspendre votre abonnement jusqu'à 6 mois tout en conservant une place (non garantie) en cas de crise pendant cette période.</li>
+                        <li><strong>Plan de paiement adapté :</strong> Nous pouvons étudier un échelonnement des paiements en cas de difficulté passagère.</li>
+                        <li><strong>Transfert de contrat :</strong> Vous pouvez céder votre contrat à un proche ou à une personne sur liste d'attente.</li>
+                        <li><strong>Fonds de solidarité :</strong> Dans certains cas exceptionnels (maladie grave, accident), notre fonds de solidarité peut prendre en charge temporairement votre abonnement.</li>
+                    </ol>
+                    <p>En cas de résiliation définitive, les préavis sont de 3 mois pour les formules Standard et Famille, et de 6 mois pour la formule Premium. Ces préavis nous permettent de réattribuer les places et de maintenir l'équilibre financier du projet.</p>
+                    <p>Notez que l'ancienneté est conservée : si vous revenez après une période d'interruption, vous conservez votre priorité d'accès basée sur votre date d'inscription initiale.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment fonctionne le paiement annuel avec remise ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Le paiement annuel vous permet de bénéficier d'une remise de 10% sur le montant total de votre abonnement, ce qui équivaut à plus d'un mois gratuit par an. Par exemple :</p>
+                    <ul>
+                        <li>Formule Standard : 350€ × 12 = 4 200€ → avec remise : 3 780€ (économie de 420€)</li>
+                        <li>Formule Famille : 950€ × 12 = 11 400€ → avec remise : 10 260€ (économie de 1 140€)</li>
+                        <li>Formule Premium : 1 500€ × 12 = 18 000€ → avec remise : 16 200€ (économie de 1 800€)</li>
+                    </ul>
+                    <p>Autres avantages du paiement annuel :</p>
+                    <ul>
+                        <li>Pas de frais de mise en service (économie de 150€)</li>
+                        <li>Garantie de non-augmentation tarifaire pendant toute l'année</li>
+                        <li>Possibilité de remboursement prorata temporis en cas de résiliation anticipée pour cause de force majeure</li>
+                    </ul>
+                    <p>Le renouvellement annuel est proposé 30 jours avant l'échéance, avec la possibilité de basculer vers un paiement mensuel si vous le souhaitez.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sécurité -->
+        <div class="faq-category" id="securite">
+            <h2>Sécurité et Accès</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment accède-t-on au bunker en cas de crise ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nous avons développé un système d'alerte et d'accès extrêmement fiable :</p>
+                    <ol>
+                        <li><strong>Surveillance continue :</strong> Notre centre de veille analyse en permanence les risques potentiels (tensions géopolitiques, alertes environnementales, risques sanitaires).</li>
+                        <li><strong>Système d'alerte multiniveau :</strong> En cas de menace détectée, nous activons un système d'alerte graduel :</li>
+                        <ul>
+                            <li>Niveau 1 (Vigilance) : Information préventive par email et application mobile</li>
+                            <li>Niveau 2 (Pré-alerte) : Notification recommandant de se tenir prêt</li>
+                            <li>Niveau 3 (Alerte) : Instruction de rejoindre le bunker avec carte d'accès et itinéraire sécurisé</li>
+                        </ul>
+                        <li><strong>Accès sécurisé :</strong> Chaque membre dispose d'une carte d'accès biométrique qui permet d'identifier et d'authentifier rapidement les personnes autorisées.</li>
+                        <li><strong>Protocole d'accueil :</strong> À votre arrivée, vous passez par un sas de décontamination si nécessaire, puis notre équipe vous guide vers votre espace attribué.</li>
+                    </ol>
+                    <p>Les bunkers sont conçus pour permettre l'accueil de tous les membres inscrits dans un délai de 12 heures. Des exercices d'évacuation sont organisés régulièrement pour tester et améliorer ce processus.</p>
+                    <p>Si la situation vous empêche de rejoindre votre bunker habituel, notre application vous indiquera le bunker disponible le plus proche.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment garantissez-vous ma place en cas de crise ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Votre place est contractuellement garantie dans les conditions suivantes :</p>
+                    <ul>
+                        <li>Vous devez être à jour de vos cotisations</li>
+                        <li>Vous devez vous présenter dans les 12 heures suivant le déclenchement de l'alerte de niveau 3 (sauf cas de force majeure documenté)</li>
+                        <li>Vous ne pouvez céder votre place qu'aux personnes enregistrées comme bénéficiaires dans votre contrat</li>
+                    </ul>
+                    <p>Pour assurer cette garantie, nous appliquons un taux de sur-réservation limité à 10% (statistiquement, environ 10% des membres ne peuvent pas rejoindre les abris à temps). Si toutefois le bunker atteignait sa capacité maximale, les membres disposant de formules Premium et Famille sont prioritaires.</p>
+                    <p>En cas d'impossibilité d'honorer notre engagement de place garantie, notre contrat prévoit des compensations substantielles. De plus, notre système de bunkers interconnectés permet de rediriger les membres vers d'autres installations à proximité si nécessaire.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment gérez-vous la sécurité à l'intérieur du bunker ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>La sécurité au sein du bunker repose sur plusieurs dispositifs complémentaires :</p>
+                    <ol>
+                        <li><strong>Règlement intérieur :</strong> Chaque membre s'engage à respecter un règlement détaillé qui organise la vie collective.</li>
+                        <li><strong>Équipe de sécurité :</strong> Des agents formés et des volontaires constituent une équipe de sécurité interne.</li>
+                        <li><strong>Système de médiation :</strong> Un comité de médiation est formé pour résoudre pacifiquement les éventuels conflits.</li>
+                        <li><strong>Zones sécurisées :</strong> Le bunker est divisé en zones avec différents niveaux d'accès contrôlés par badges électroniques.</li>
+                        <li><strong>Protocoles d'urgence interne :</strong> Des procédures claires sont établies pour gérer les incidents (médicaux, techniques, comportementaux).</li>
+                    </ol>
+                    <p>Tous les membres reçoivent une formation aux protocoles de sécurité lors de sessions d'intégration. Des exercices réguliers permettent de maintenir ces compétences à jour.</p>
+                    <p>Par ailleurs, nos bunkers disposent d'espaces d'isolement temporaire pour gérer les cas de comportements à risque, et d'un système de vidéosurveillance dans les zones communes uniquement, respectant la vie privée des résidents.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment sont gérés les problèmes médicaux dans le bunker ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Chaque bunker est équipé d'une infirmerie complète et dispose d'une équipe médicale composée de :</p>
+                    <ul>
+                        <li>Au moins un médecin généraliste</li>
+                        <li>Plusieurs infirmiers/infirmières</li>
+                        <li>Un pharmacien</li>
+                        <li>Des membres formés aux premiers secours</li>
+                    </ul>
+                    <p>Notre approche médicale s'articule autour de trois axes :</p>
+                    <ol>
+                        <li><strong>Prévention :</strong> Avant toute crise, nous établissons un dossier médical pour chaque membre (antécédents, traitements en cours, allergies). Les médicaments pour les traitements chroniques sont stockés en quantité suffisante.</li>
+                        <li><strong>Soins courants :</strong> L'infirmerie est équipée pour traiter la plupart des affections courantes et des blessures légères. Elle dispose également d'un laboratoire d'analyses basiques.</li>
+                        <li><strong>Urgences :</strong> En cas d'urgence médicale dépassant nos capacités, nous disposons de protocoles d'évacuation sécurisée vers l'extérieur si la situation le permet.</li>
+                    </ol>
+                    <p>Lors de votre inscription, nous vous demanderons de remplir un questionnaire médical confidentiel qui nous permettra d'anticiper vos besoins spécifiques. Si vous souffrez d'une condition médicale particulière, notre équipe médicale vous contactera pour établir un protocole personnalisé.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Communauté -->
+        <div class="faq-category" id="communaute">
+            <h2>Communauté et Vie Collective</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment les décisions sont-elles prises au sein de la communauté ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Notre modèle de gouvernance repose sur des principes démocratiques à plusieurs niveaux :</p>
+                    <ol>
+                        <li><strong>Conseil de gestion :</strong> Chaque bunker dispose d'un conseil élu par les membres pour un mandat de 2 ans. Ce conseil gère les affaires courantes et l'application du règlement intérieur.</li>
+                        <li><strong>Assemblée générale :</strong> Tous les membres se réunissent au moins deux fois par an en assemblée générale pour voter les décisions importantes (investissements majeurs, modifications du règlement, élection du conseil).</li>
+                        <li><strong>Comités spécialisés :</strong> Des comités thématiques (sécurité, approvisionnement, formation, loisirs, etc.) permettent aux membres de s'impliquer selon leurs compétences.</li>
+                        <li><strong>Référendums :</strong> Pour les questions particulièrement importantes, des référendums peuvent être organisés avec vote électronique.</li>
+                    </ol>
+                    <p>Les droits de vote sont pondérés selon la formule d'abonnement :</p>
+                    <ul>
+                        <li>Formule Standard : 1 voix</li>
+                        <li>Formule Famille : 2 voix</li>
+                        <li>Formule Premium : 3 voix</li>
+                    </ul>
+                    <p>Cette pondération reflète l'investissement financier plus important des formules supérieures, mais le système de vote par majorité qualifiée (2/3) pour les décisions cruciales garantit qu'aucun groupe ne peut imposer ses choix sans un large consensus.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment se déroule la vie quotidienne dans le bunker en cas de crise ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>La vie dans le bunker est organisée pour maintenir un équilibre entre efficacité et bien-être :</p>
+                    <ul>
+                        <li><strong>Organisation du temps :</strong> La journée est structurée avec des horaires définis pour les repas, les tâches collectives, les formations et les activités de loisirs.</li>
+                        <li><strong>Répartition des tâches :</strong> Chaque membre contribue selon ses compétences et capacités (cuisine, maintenance, santé, éducation, sécurité, etc.).</li>
+                        <li><strong>Zones et activités :</strong> Les bunkers sont divisés en zones fonctionnelles :</li>
+                        <ul>
+                            <li>Quartiers d'habitation (espaces privés)</li>
+                            <li>Zones communes (réfectoire, salles de réunion, espace détente)</li>
+                            <li>Installations techniques (traitement d'eau, énergie, stockage)</li>
+                            <li>Centre médical</li>
+                            <li>Zones d'activité physique</li>
+                            <li>Espaces éducatifs et culturels</li>
+                        </ul>
+                        <li><strong>Bien-être psychologique :</strong> Des activités variées sont proposées pour maintenir le moral (jeux, culture, sport adapté, méditation). Des psychologues formés à la gestion de crise accompagnent la communauté.</li>
+                    </ul>
+                    <p>Nous avons développé des programmes spécifiques pour différentes tranches d'âge, notamment un cursus éducatif pour les enfants et adolescents, afin de poursuivre leur apprentissage.</p>
+                    <p>Des simulations régulières (48-72h) permettent aux membres volontaires de s'habituer à cette organisation et de l'améliorer continuellement.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Quelles formations sont proposées aux membres ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Notre programme de formation est conçu pour renforcer l'autonomie individuelle et collective :</p>
+                    <div class="faq-grid">
+                        <div class="faq-col">
+                            <h4>Formations de base</h4>
+                            <p>(incluses dans tous les abonnements)</p>
+                            <ul>
+                                <li>Premiers secours et gestes d'urgence</li>
+                                <li>Utilisation des équipements du bunker</li>
+                                <li>Procédures d'évacuation et d'alerte</li>
+                                <li>Gestion du stress et communication de crise</li>
+                                <li>Fondamentaux de la vie en collectivité</li>
+                            </ul>
+                        </div>
+                        <div class="faq-col">
+                            <h4>Formations avancées</h4>
+                            <p>(selon formule)</p>
+                            <ul>
+                                <li>Médecine d'urgence</li>
+                                <li>Gestion des ressources en situation de pénurie</li>
+                                <li>Maintenance des systèmes techniques</li>
+                                <li>Agriculture hydroponique</li>
+                                <li>Sécurité et autodéfense</li>
+                                <li>Techniques de survie en milieu hostile</li>
+                            </ul>
+                        </div>
+                        <div class="faq-col">
+                            <h4>Formations spécialisées</h4>
+                            <p>(options payantes)</p>
+                            <ul>
+                                <li>Radioprotection</li>
+                                <li>Leadership et gestion de crise</li>
+                                <li>Communication radio avancée</li>
+                                <li>Psychologie de l'urgence</li>
+                                <li>Techniques de reconnaissance extérieure</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>Les formations sont dispensées par des professionnels (militaires retraités, médecins, ingénieurs) et adaptées à tous les niveaux. Elles se déroulent principalement le week-end dans nos centres de formation ou directement dans les bunkers.</p>
+                    <p>Chaque membre reçoit un livret de compétences qui lui permet de suivre sa progression. Ces formations sont également valorisables dans la vie quotidienne et professionnelle (certificats reconnus pour les premiers secours, par exemple).</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment sont gérés les conflits au sein de la communauté ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>La gestion des conflits est un aspect crucial de la vie en communauté, particulièrement en situation de crise. Notre approche se déploie à plusieurs niveaux :</p>
+                    <ol>
+                        <li><strong>Prévention :</strong> Tous les membres suivent une formation à la communication non-violente et à la gestion du stress. Le règlement intérieur établit clairement les droits et devoirs de chacun.</li>
+                        <li><strong>Médiation par les pairs :</strong> Des médiateurs volontaires formés spécifiquement interviennent comme première instance en cas de différend entre membres.</li>
+                        <li><strong>Comité de médiation :</strong> Pour les situations plus complexes, un comité de médiation composé de membres élus et d'un psychologue peut être saisi.</li>
+                        <li><strong>Conseil de discipline :</strong> En dernier recours, pour les comportements graves mettant en danger la communauté, le conseil de gestion peut prendre des mesures disciplinaires graduées (avertissement, restriction d'accès à certaines zones, isolement temporaire).</li>
+                    </ol>
+                    <p>L'exclusion d'un membre n'est envisagée qu'en cas de danger imminent pour la communauté, après épuisement de toutes les autres options et vote à la majorité qualifiée du conseil de gestion.</p>
+                    <p>Nos simulations de vie en bunker incluent des scénarios de tensions interpersonnelles pour préparer la communauté à gérer ces situations efficacement avant qu'elles ne surviennent en situation réelle.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Juridique -->
+        <div class="faq-category" id="juridique">
+            <h2>Questions Juridiques</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Quel est le cadre légal de votre activité ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Notre activité s'inscrit dans un cadre juridique précis :</p>
+                    <ul>
+                        <li><strong>Statut d'entreprise :</strong> Nos-Bunkers.fr est une société par actions simplifiée (SAS) enregistrée au Registre du Commerce et des Sociétés de Paris.</li>
+                        <li><strong>Réglementation construction :</strong> Nos bunkers respectent toutes les normes de construction en vigueur, notamment le Code de la Construction et de l'Habitation, avec des permis de construire délivrés après études d'impact environnemental.</li>
+                        <li><strong>Normes de sécurité :</strong> Nos installations sont conformes aux réglementations relatives aux Établissements Recevant du Public (ERP) et font l'objet d'inspections régulières par les autorités compétentes.</li>
+                        <li><strong>Contrats et assurances :</strong> Nos contrats d'abonnement sont conformes au droit de la consommation. Nous disposons d'assurances responsabilité civile professionnelle et d'assurances spécifiques couvrant nos infrastructures.</li>
+                    </ul>
+                    <p>Nous travaillons en toute transparence avec les autorités locales et nationales. Si nos bunkers ne font pas partie du dispositif officiel de protection civile, nos installations peuvent néanmoins être réquisitionnées par l'État en cas de crise majeure, conformément aux dispositions légales.</p>
+                    <p>Tous nos contrats sont validés par un cabinet d'avocats spécialisé et sont disponibles en consultation sur simple demande avant engagement.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Quelles garanties offrez-vous sur la pérennité du projet ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nous avons mis en place plusieurs mesures pour garantir la pérennité à long terme de nos installations :</p>
+                    <ol>
+                        <li><strong>Structure financière solide :</strong> 30% des abonnements sont placés dans un fonds de réserve qui ne peut être utilisé que pour la maintenance et le renouvellement des équipements.</li>
+                        <li><strong>Audit indépendant :</strong> Nos comptes sont audités annuellement par un cabinet indépendant dont le rapport est disponible pour tous les membres.</li>
+                        <li><strong>Propriété des terrains :</strong> Nous sommes propriétaires des terrains sur lesquels sont construits les bunkers, éliminant ainsi les risques liés aux baux commerciaux.</li>
+                        <li><strong>Assurance continuité de service :</strong> Nous disposons d'une assurance spécifique qui garantit le financement de la maintenance même en cas de défaillance de l'entreprise.</li>
+                        <li><strong>Clause de reprise :</strong> En cas de cessation d'activité, nos statuts prévoient un droit de reprise prioritaire par les membres constitués en association.</li>
+                    </ol>
+                    <p>Par ailleurs, nos contrats d'abonnement incluent une clause de garantie de service qui vous protège : si nous ne pouvons pas honorer nos engagements, vous êtes automatiquement remboursé des 12 derniers mois d'abonnement.</p>
+                    <p>Enfin, pour renforcer la transparence, un représentant des abonnés siège au conseil d'administration de la société et participe aux décisions stratégiques.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Puis-je résilier mon contrat et sous quelles conditions ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Oui, vous pouvez résilier votre contrat à tout moment, sous certaines conditions :</p>
+                    <ul>
+                        <li><strong>Préavis :</strong> Délai de préavis de 3 mois pour les formules Standard et Famille, 6 mois pour la formule Premium.</li>
+                        <li><strong>Formalités :</strong> La résiliation doit être notifiée par lettre recommandée avec accusé de réception ou par email avec confirmation de lecture.</li>
+                        <li><strong>Obligations financières :</strong> Vous devez être à jour de vos paiements au moment de la résiliation effective.</li>
+                    </ul>
+                    <p>Dans certains cas spécifiques, le préavis peut être réduit ou supprimé :</p>
+                    <ul>
+                        <li>Déménagement à plus de 50 km d'un de nos bunkers (justificatif requis)</li>
+                        <li>Problèmes de santé graves empêchant l'utilisation du service (certificat médical)</li>
+                        <li>Difficultés financières majeures (procédure de surendettement)</li>
+                        <li>Non-respect de nos engagements contractuels</li>
+                    </ul>
+                    <p>En cas de résiliation, vous perdez votre place réservée, mais conservez votre ancienneté si vous souhaitez revenir ultérieurement. Vous pouvez également céder votre contrat à un tiers avec notre accord préalable.</p>
+                    <p>À noter que pendant les périodes d'alerte de niveau 2 ou 3, les résiliations sont temporairement suspendues pour des raisons évidentes de sécurité et d'équité.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Que se passe-t-il en cas de décès d'un membre ?</h3>
+                    <span class="toggle-icon"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>En cas de décès d'un membre, nous avons mis en place plusieurs dispositions :</p>
+                    <ol>
+                        <li><strong>Transmission des droits :</strong> Les droits d'accès au bunker peuvent être transmis à un bénéficiaire désigné dans le contrat (conjoint, enfant, parent). Vous pouvez modifier cette désignation à tout moment.</li>
+                        <li><strong>Options pour les héritiers :</strong> Si aucun bénéficiaire n'est désigné, les héritiers peuvent choisir de :</li>
+                        <ul>
+                            <li>Transférer le contrat à l'un d'entre eux</li>
+                            <li>Céder le contrat à un tiers</li>
+                            <li>Résilier le contrat sans préavis ni frais</li>
+                        </ul>
+                        <li><strong>Fonds de soutien :</strong> Pour les familles dont le membre décédé était le principal soutien financier, un fonds de solidarité peut prendre en charge temporairement (jusqu'à 6 mois) l'abonnement pour laisser le temps à la famille de s'organiser.</li>
+                    </ol>
+                    <p>Nous apportons une attention particulière à traiter ces situations avec respect et bienveillance. Un conseiller dédié accompagne les proches pour les guider dans les démarches administratives et leur présenter les différentes options disponibles.</p>
+                    <p>Nous recommandons à tous nos membres de mentionner leur abonnement Nos-Bunkers.fr dans leurs dispositions testamentaires pour faciliter les démarches en cas de décès.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Contact -->
+<section class="faq-contact-section">
+    <div class="container">
+        <div class="contact-content">
+            <h2>Vous n'avez pas trouvé la réponse à votre question ?</h2>
+            <p>Notre équipe est à votre disposition pour répondre à toutes vos interrogations sur notre projet de bunkers communautaires.</p>
+            <div class="contact-options">
+                <div class="contact-option">
+                    <div class="option-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Par email</h3>
+                    <p>Réponse sous 24h ouvrées</p>
+                    <a href="mailto:contact@nos-bunkers.fr" class="btn btn-primary">contact@nos-bunkers.fr</a>
+                </div>
+
+                <div class="contact-option">
+                    <div class="option-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Par téléphone</h3>
+                    <p>Du lundi au vendredi, 9h-18h</p>
+                    <a href="tel:+33123456789" class="btn btn-primary">01 23 45 67 89</a>
+                </div>
+
+                <div class="contact-option">
+                    <div class="option-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Formulaire de contact</h3>
+                    <p>Détaillez votre demande</p>
+                    <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Newsletter -->
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-content">
+            <h2>Restez informé de l'évolution du projet</h2>
+            <p>Recevez nos actualités et soyez alerté des opportunités près de chez vous</p>
+            <form class="newsletter-form" action="#" method="POST">
+                <input type="email" placeholder="Votre adresse email" required>
+                <button type="submit" class="btn btn-primary">S'abonner</button>
+            </form>
+            <p class="privacy-note">En vous inscrivant, vous acceptez notre politique de confidentialité. Vous pourrez vous désinscrire à tout moment.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Pied de page -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Nos-Bunkers.fr</h3>
+                <p>Anticiper l'imprévisible et sécuriser son futur. Pour protéger ce qui compte vraiment.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Liens rapides</h3>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="concept.html">Notre concept</a></li>
+                    <li><a href="communaute.html">Communauté</a></li>
+                    <li><a href="abonnement.html">Abonnements</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Informations</h3>
+                <ul class="footer-links">
+                    <li><a href="#">À propos de nous</a></li>
+                    <li><a href="#">Fonctionnement des bunkers</a></li>
+                    <li><a href="#">Sécurité et standards</a></li>
+                    <li><a href="#">Témoignages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Presse</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> Siège : 1 rue de la Sécurité, 75001 Paris</p>
+                    <p><i class="fas fa-phone"></i> Tél : +33 (0)1 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> Email : contact@nos-bunkers.fr</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nos-Bunkers.fr. Tous droits réservés.</p>
+            <ul class="legal-links">
+                <li><a href="#">Conditions d'utilisation</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Mentions légales</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/faq.js"></script>
+</body>
+</html>
