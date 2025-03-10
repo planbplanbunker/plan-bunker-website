@@ -4,11 +4,15 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Supprimer la bannière d'alerte
+    const alertBanner = document.querySelector('.alert-banner');
+    if (alertBanner) {
+        alertBanner.remove(); // Supprime complètement la bannière du DOM
+    }
     // Éléments DOM
     const header = document.querySelector('.main-header');
     const menuToggle = document.querySelector('.menu-toggle');
     const navList = document.querySelector('.nav-list');
-    const alertBanner = document.querySelector('.alert-banner');
     const closeBannerBtn = document.querySelector('.close-btn');
     const faqItems = document.querySelectorAll('.faq-item');
     const registrationForm = document.getElementById('registration-form');
