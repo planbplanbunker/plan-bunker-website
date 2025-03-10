@@ -26,18 +26,63 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Menu mobile
+    // Menu mobile amélioré
     if (menuToggle) {
-        menuToggle.addEventListener('click', function() {
-            navList.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
-
-            // Animation des barres du menu burger
-            const spans = menuToggle.querySelectorAll('span');
-            spans[0].classList.toggle('rotate-down');
-            spans[1].classList.toggle('fade-out');
-            spans[2].classList.toggle('rotate-up');
+        menuToggle.addEventListener('click', function(e) {
+            e.stopPropagation(); // Empêcher la propagation pour éviter la fermeture immédiate
+            toggleMenu();
         });
+    }
+
+    // Fermer le menu lorsqu'un lien est cliqué
+    if (navList) {
+        navList.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                closeMenu();
+            });
+        });
+    }
+
+    // Fermer le menu lorsqu'on clique en dehors
+    document.addEventListener('click', function(e) {
+        if (navList && navList.classList.contains('active') &&
+            !e.target.closest('.main-nav') &&
+            !e.target.closest('.menu-toggle')) {
+            closeMenu();
+        }
+    });
+
+    // Fermer le menu avec la touche Escape
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && navList && navList.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+
+    // Fonction pour basculer l'état du menu
+    function toggleMenu() {
+        navList.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+
+        // Animation des barres du menu burger
+        const spans = menuToggle.querySelectorAll('span');
+        spans[0].classList.toggle('rotate-down');
+        spans[1].classList.toggle('fade-out');
+        spans[2].classList.toggle('rotate-up');
+    }
+
+    // Fonction pour fermer le menu
+    function closeMenu() {
+        navList.classList.remove('active');
+        document.body.classList.remove('menu-open');
+
+        // Réinitialiser l'animation du menu burger
+        if (menuToggle) {
+            const spans = menuToggle.querySelectorAll('span');
+            spans[0].classList.remove('rotate-down');
+            spans[1].classList.remove('fade-out');
+            spans[2].classList.remove('rotate-up');
+        }
     }
 
     // Fermeture de la bannière d'alerte
