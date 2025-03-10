@@ -1,5 +1,5 @@
 /**
- * Nos-Bunkers.fr - Script pour la page FAQ
+ * PlanBPlanBunker - Script pour la page FAQ
  * Ce fichier gère les fonctionnalités interactives de la page FAQ (accordéon, recherche, filtrage)
  */
 

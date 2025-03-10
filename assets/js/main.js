@@ -1,5 +1,5 @@
 /**
- * Nos-Bunkers.fr - Script principal
+ * PlanBPlanBunker - Script principal
  * Ce fichier contient les fonctionnalités JavaScript générales du site
  */
 

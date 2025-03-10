@@ -1,5 +1,5 @@
 /**
- * Nos-Bunkers.fr - Script pour le carrousel de témoignages
+ * PlanBPlanBunker - Script pour le carrousel de témoignages
  * Ce fichier gère le carrousel de témoignages sur la page communauté
  */
 

@@ -1,5 +1,5 @@
 /**
- * Nos-Bunkers.fr - Script pour la gestion des abonnements
+ * PlanBPlanBunker - Script pour la gestion des abonnements
  * Ce fichier gère les fonctionnalités spécifiques à la page d'abonnement
  */
 

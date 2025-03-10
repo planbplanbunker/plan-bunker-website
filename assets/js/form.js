@@ -1,5 +1,5 @@
 /**
- * Nos-Bunkers.fr - Script de gestion des formulaires
+ * PlanBPlanBunker - Script de gestion des formulaires
  * Ce fichier contient les fonctionnalités pour la validation et la soumission des formulaires
  */
 
@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         // Utiliser l'API Web Share si disponible
                         if (navigator.share) {
                             navigator.share({
-                                title: 'Nos-Bunkers.fr - Sécurisez votre avenir',
+                                title: 'PlanBPlanBunker - Sécurisez votre avenir',
                                 text: 'J\'ai rejoint ce projet de bunkers communautaires pour assurer ma sécurité et celle de mes proches. Découvrez-le !',
                                 url: window.location.href,
                             })

@@ -1,5 +1,5 @@
 /**
- * Nos-Bunkers.fr - Script pour la carte des communautés
+ * PlanBPlanBunker - Script pour la carte des communautés
  * Ce fichier gère la carte interactive qui affiche les communautés à travers la France
  * Utilise l'API Google Maps pour le rendu de la carte
  */

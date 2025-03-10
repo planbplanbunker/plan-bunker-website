@@ -1,5 +1,5 @@
 /**
- * Nos-Bunkers.fr - Script pour la carte de contact
+ * PlanBPlanBunker - Script pour la carte de contact
  * Ce fichier gère la carte Google Maps qui affiche l'emplacement du siège
  */
 
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (!mapElement) return;
 
-    // Coordonnées de Nos-Bunkers.fr (fictif - centre de Paris)
+    // Coordonnées de PlanBPlanBunker (fictif - centre de Paris)
     const officeLocation = {lat: 48.8588, lng: 2.35};
 
     // Initialiser la carte Google Maps centrée sur Paris
@@ -41,17 +41,17 @@ document.addEventListener('DOMContentLoaded', function() {
             scale: 15,
             labelOrigin: new google.maps.Point(0, 0)
         },
-        title: 'Nos-Bunkers.fr'
+        title: 'PlanBPlanBunker'
     });
 
     // Ajouter une infoWindow pour afficher les informations du siège
     const infoWindow = new google.maps.InfoWindow({
         content: `
             <div class="office-popup">
-                <h3>Nos-Bunkers.fr</h3>
+                <h3>PlanBPlanBunker</h3>
                 <p>1 rue de la Sécurité<br>75001 Paris</p>
                 <p><strong>Tél:</strong> +33 (0)1 23 45 67 89</p>
-                <p><strong>Email:</strong> contact@nos-bunkers.fr</p>
+                <p><strong>Email:</strong> contact@PlanBPlanBunker</p>
             </div>
         `,
         maxWidth: 250
@@ -139,10 +139,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Adapter l'URL selon l'appareil
         if (userAgent.indexOf('iphone') > -1 || userAgent.indexOf('ipad') > -1) {
             // URL pour Apple Maps
-            mapsUrl = `https://maps.apple.com/?q=Nos-Bunkers.fr&ll=${officeLocation.lat},${officeLocation.lng}&dirflg=d`;
+            mapsUrl = `https://maps.apple.com/?q=PlanBPlanBunker&ll=${officeLocation.lat},${officeLocation.lng}&dirflg=d`;
         } else {
             // URL pour Google Maps (Android et autres)
-            mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${officeLocation.lat},${officeLocation.lng}&destination_place_id=Nos-Bunkers.fr&travelmode=driving`;
+            mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${officeLocation.lat},${officeLocation.lng}&destination_place_id=PlanBPlanBunker&travelmode=driving`;
         }
 
         // Ouvrir l'URL dans un nouvel onglet

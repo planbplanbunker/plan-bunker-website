@@ -1,5 +1,5 @@
 /**
- * Nos-Bunkers.fr - Script pour la carte interactive
+ * PlanBPlanBunker - Script pour la carte interactive
  * Ce fichier gère la carte interactive qui affiche les emplacements des bunkers
  * Utilise l'API Google Maps pour le rendu de la carte
  */

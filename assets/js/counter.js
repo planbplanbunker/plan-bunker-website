@@ -1,5 +1,5 @@
 /**
- * Nos-Bunkers.fr - Script d'animation des compteurs
+ * PlanBPlanBunker - Script d'animation des compteurs
  * Ce fichier gère l'animation des compteurs de statistiques sur la page d'accueil
  */
 

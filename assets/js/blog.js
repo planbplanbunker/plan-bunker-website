@@ -1,5 +1,5 @@
 /**
- * Nos-Bunkers.fr - Script pour la page blog
+ * PlanBPlanBunker - Script pour la page blog
  * Ce fichier gère les fonctionnalités interactives pour la page blog
  */
 
