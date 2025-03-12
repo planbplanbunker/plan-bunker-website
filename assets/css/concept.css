@@ -87,9 +87,255 @@
     object-fit: cover;
 }
 
+/* ----- SECTION EUROPE COMPARAISON ----- */
+.europe-comparison {
+    background-color: var(--light);
+    padding: var(--spacing-xl) 0;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.country-card {
+    background-color: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: transform var(--transition-normal);
+}
+
+.country-card:hover {
+    transform: translateY(-10px);
+}
+
+.country-flag {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-md);
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid var(--gray-light);
+}
+
+.country-flag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.country-card h3 {
+    margin-bottom: var(--spacing-md);
+    color: var(--secondary);
+}
+
+.country-stats {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.country-stats li {
+    padding: var(--spacing-xs) 0;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.country-stats li:last-child {
+    border-bottom: none;
+    padding-top: var(--spacing-md);
+}
+
+.stat-number {
+    font-weight: bold;
+    color: var(--primary);
+    margin-right: var(--spacing-xs);
+}
+
+.stat-highlight {
+    display: block;
+    margin-top: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.stat-highlight.positive {
+    background-color: rgba(42, 157, 143, 0.1);
+    color: var(--success);
+}
+
+.stat-highlight.negative {
+    background-color: rgba(230, 57, 70, 0.1);
+    color: var(--primary);
+}
+
+.comparison-conclusion {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background-color: white;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.comparison-conclusion p {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.comparison-conclusion p:last-child {
+    margin-bottom: 0;
+}
+
+/* ----- SECTION VALEURS ----- */
+.values-section {
+    padding: var(--spacing-xl) 0;
+    background-color: white;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.value-card {
+    background-color: var(--light);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    height: 100%;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal);
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+}
+
+.value-icon {
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: var(--spacing-md);
+}
+
+.value-card h3 {
+    color: var(--secondary);
+    margin-bottom: var(--spacing-md);
+    position: relative;
+}
+
+.value-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+.value-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ----- SECTION TECHNOLOGIES ----- */
+.tech-innovation-section {
+    background-color: var(--light);
+    padding: var(--spacing-xl) 0;
+}
+
+.tech-overview {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto var(--spacing-xl);
+}
+
+.tech-overview p {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.tech-categories {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.tech-category {
+    background-color: white;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.tech-category h3 {
+    background-color: var(--secondary);
+    color: white;
+    padding: var(--spacing-md) var(--spacing-lg);
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.tech-category h3 i {
+    margin-right: var(--spacing-md);
+    color: var(--accent);
+}
+
+.tech-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+}
+
+.tech-content img {
+    width: 100%;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.tech-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tech-details p {
+    margin-bottom: var(--spacing-md);
+}
+
+.tech-benefits {
+    list-style: none;
+    padding: 0;
+}
+
+.tech-benefits li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.tech-benefits li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
 /* ----- SECTION AVANTAGES ----- */
 .benefits-section {
-    background-color: var(--light);
+    background-color: white;
     padding: var(--spacing-xl) 0;
 }
 
@@ -101,7 +347,7 @@
 }
 
 .benefit-card {
-    background-color: white;
+    background-color: var(--light);
     padding: var(--spacing-lg);
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-md);
@@ -133,7 +379,7 @@
 /* ----- SECTION COMMENT ÇA MARCHE ----- */
 .how-it-works {
     padding: var(--spacing-xl) 0;
-    background-color: white;
+    background-color: var(--light);
 }
 
 .steps-timeline {
@@ -186,7 +432,7 @@
 }
 
 .timeline-content {
-    background-color: var(--light);
+    background-color: white;
     padding: var(--spacing-lg);
     border-radius: var(--border-radius-md);
     box-shadow: var(--shadow-sm);
@@ -203,7 +449,7 @@
 
 /* ----- SECTION ÉQUIPEMENTS ----- */
 .equipment-section {
-    background-color: var(--light);
+    background-color: white;
     padding: var(--spacing-xl) 0;
 }
 
@@ -215,7 +461,7 @@
 }
 
 .category {
-    background-color: white;
+    background-color: var(--light);
     padding: var(--spacing-lg);
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-md);
@@ -259,7 +505,7 @@
 /* ----- SECTION PLANS ----- */
 .plans-section {
     padding: var(--spacing-xl) 0;
-    background-color: white;
+    background-color: var(--light);
 }
 
 .plans-grid {
@@ -370,6 +616,27 @@
     color: var(--gray);
 }
 
+.lottery-system {
+    background-color: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    margin-top: var(--spacing-lg);
+    border-left: 4px solid var(--success);
+}
+
+.lottery-system h3 {
+    color: var(--success);
+    margin-bottom: var(--spacing-md);
+}
+
+.lottery-system p {
+    margin-bottom: var(--spacing-md);
+}
+
+.lottery-system p:last-child {
+    margin-bottom: 0;
+}
+
 /* ----- SECTION TÉMOIGNAGES ----- */
 .testimonials-section {
     background-color: var(--light);
@@ -442,9 +709,45 @@
     font-size: 0.9rem;
 }
 
+/* Section Message */
+.message-section {
+    background-color: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: var(--spacing-xl) 0;
+}
+
+.message-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.message-section h2 {
+    color: white;
+    margin-bottom: var(--spacing-md);
+    font-size: 2.2rem;
+}
+
+.message-section p {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.message-slogan {
+    margin: var(--spacing-xl) 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.message-slogan p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--accent);
+}
+
 /* ----- SECTION CTA ----- */
 .cta-section {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     color: white;
     padding: var(--spacing-xl) 0;
     position: relative;
@@ -489,10 +792,27 @@
     margin: 0 var(--spacing-sm);
 }
 
+/* Afficher la bannière d'alerte */
+.alert-banner {
+    display: flex !important;
+}
+
 /* ----- RESPONSIVE STYLES ----- */
 @media (max-width: 1024px) {
     .intro-grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .comparison-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tech-content {
+        grid-template-columns: 1fr;
     }
 
     .benefits-grid {
@@ -520,6 +840,14 @@
     .intro-image {
         order: -1;
         margin-bottom: var(--spacing-lg);
+    }
+
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
     }
 
     .benefits-grid {
