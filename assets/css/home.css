@@ -126,7 +126,7 @@
 
 .check-list li::before {
     content: '✓';
-    color: var(--primary);
+    color: green;
     position: absolute;
     left: 0;
     top: 0;
