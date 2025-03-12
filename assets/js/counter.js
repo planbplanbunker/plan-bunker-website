@@ -91,8 +91,8 @@ document.addEventListener('DOMContentLoaded', function() {
      */
     function simulateLiveUpdates() {
         // Sélectionner tous les compteurs
-        const participantsCounter = document.querySelector('.counter-item .count[data-count="1250"]');
-        const bunkersCounter = document.querySelector('.counter-item .count[data-count="8"]');
+        const participantsCounter = document.querySelector('.counter-item .count[data-count="1500"]');
+        const bunkersCounter = document.querySelector('.counter-item .count[data-count="10"]');
 
         if (participantsCounter) {
             // Toutes les 3-7 secondes, ajouter 1-3 participants
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
      * Fait "respirer" le compteur pour attirer l'attention
      */
     function animateAutonomyCounter() {
-        const autonomyCounter = document.querySelector('.counter-item .count[data-count="150"]');
+        const autonomyCounter = document.querySelector('.counter-item .count[data-count="365"]');
 
         if (!autonomyCounter) return;
 

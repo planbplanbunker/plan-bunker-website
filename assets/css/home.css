@@ -578,9 +578,155 @@
     opacity: 0.7;
 }
 
+/* Ajouts pour la nouvelle section technologie */
+.tech-section {
+    margin-top: var(--spacing-xl);
+    background-color: #f9f9f9;
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.tech-section h3 {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+}
+
+.tech-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary);
+}
+
+.tech-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.tech-feature {
+    text-align: center;
+    padding: var(--spacing-md);
+    transition: transform var(--transition-normal);
+}
+
+.tech-feature:hover {
+    transform: translateY(-5px);
+}
+
+.tech-feature i {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: var(--spacing-md);
+    display: block;
+}
+
+.tech-feature h4 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--secondary);
+}
+
+/* Système de loterie solidaire */
+.solidarity-lottery {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background-color: #f9f9f9;
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    border-left: 4px solid var(--success);
+    box-shadow: var(--shadow-md);
+}
+
+.solidarity-lottery h3 {
+    color: var(--success);
+    margin-bottom: var(--spacing-sm);
+}
+
+.solidarity-lottery p {
+    margin-bottom: var(--spacing-md);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Options d'engagement */
+.engagement-options {
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.action-list {
+    list-style: none;
+    margin-top: var(--spacing-md);
+}
+
+.action-list li {
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: flex-start;
+}
+
+.action-list i {
+    color: var(--accent);
+    margin-right: var(--spacing-sm);
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+/* Section Message d'espoir */
+.message-section {
+    background-color: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: var(--spacing-xl) 0;
+}
+
+.message-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.message-section h2 {
+    color: white;
+    margin-bottom: var(--spacing-md);
+    font-size: 2.2rem;
+}
+
+.message-section p {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.message-slogan {
+    margin: var(--spacing-xl) 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.message-slogan p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--accent);
+}
+
+/* Afficher la bannière d'alerte */
+.alert-banner {
+    display: flex !important;
+}
+
 /* ----- RESPONSIVE STYLES ----- */
 @media (max-width: 1024px) {
     .solution-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tech-features {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -604,6 +750,10 @@
     }
 
     .solution-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-features {
         grid-template-columns: 1fr;
     }
 
