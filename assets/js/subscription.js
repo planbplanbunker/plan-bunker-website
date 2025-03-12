@@ -164,11 +164,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (selectedPlan) {
             switch (selectedPlan.value) {
                 case 'standard':
-                    basePrice = 350;
+                    basePrice = 300;
                     planName = 'Formule Standard';
                     break;
                 case 'family':
-                    basePrice = 950;
+                    basePrice = 900;
                     planName = 'Formule Famille';
                     break;
                 case 'premium':
