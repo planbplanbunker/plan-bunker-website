@@ -329,7 +329,7 @@
     content: '✓';
     position: absolute;
     left: 0;
-    color: var(--primary);
+    color: green;
     font-weight: bold;
 }
 
