@@ -5,9 +5,9 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // Sélectionner tous les éléments compteurs
-    const counters = document.querySelectorAll('.count');
+    const counters = document.querySelectorAll('.count:not(.blurred)');
 
-    // Si aucun compteur n'est trouvé, ne rien faire
+    // Si aucun compteur non-flouté n'est trouvé, ne rien faire
     if (!counters.length) return;
 
     // Observer l'intersection pour démarrer l'animation lors du scroll
