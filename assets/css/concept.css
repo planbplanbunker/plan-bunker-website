@@ -912,3 +912,100 @@
 .lottery-system {
     position: relative;
 }
+
+/* Styles pour la section de citation */
+.quote-section {
+    background-color: var(--light);
+    padding: var(--spacing-lg) 0;
+    border-top: 1px solid var(--gray-light);
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.quote-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+
+.quote-preview, .quote-full {
+    padding: var(--spacing-lg);
+    position: relative;
+}
+
+blockquote {
+    font-style: italic;
+    position: relative;
+    padding-left: var(--spacing-lg);
+    margin: 0 0 var(--spacing-md) 0;
+    border-left: 3px solid var(--primary);
+}
+
+blockquote p {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--secondary);
+}
+
+blockquote cite {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    color: var(--primary);
+    margin-top: var(--spacing-sm);
+}
+
+.btn-expand-quote, .btn-collapse-quote {
+    background-color: transparent;
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+    font-weight: 600;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    transition: background-color var(--transition-normal);
+    display: block;
+    margin-left: auto;
+}
+
+.btn-expand-quote:hover, .btn-collapse-quote:hover {
+    background-color: rgba(230, 57, 70, 0.1);
+    text-decoration: underline;
+}
+
+/* Style spécifique pour la citation complète */
+.quote-full blockquote {
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
+}
+
+/* Style pour la note sur le site */
+.site-note {
+    font-size: 0.9rem;
+    color: var(--gray);
+    margin-top: var(--spacing-sm);
+    padding-left: var(--spacing-md);
+    border-left: 2px solid var(--accent);
+    background-color: rgba(255, 183, 3, 0.05);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    display: inline-block;
+}
+
+/* Style amélioré pour la tagline */
+.tagline {
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-md);
+    border-left: 4px solid var(--primary);
+    background-color: rgba(230, 57, 70, 0.05);
+    font-size: 1.1rem;
+}
+
+.tagline strong {
+    color: var(--secondary);
+}
