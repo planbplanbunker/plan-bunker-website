@@ -899,3 +899,16 @@
         left: 30px;
     }
 }
+
+/* Style pour l'icône dans le système de loterie */
+.lottery-system .lottery-icon {
+    font-size: 2.2rem;
+    color: var(--accent);
+    margin-bottom: var(--spacing-sm);
+    display: block;
+}
+
+/* Si la section a un style particulier, vous pouvez l'ajuster */
+.lottery-system {
+    position: relative;
+}

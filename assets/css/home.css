@@ -922,3 +922,16 @@
         font-size: 2rem;
     }
 }
+
+/* Style pour l'icône de loterie */
+.lottery-icon {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: var(--spacing-md);
+    display: block;
+}
+
+/* Si vous préférez une autre couleur pour l'icône de loterie */
+.solidarity-lottery .lottery-icon {
+    color: var(--success);
+}
